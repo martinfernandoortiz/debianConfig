@@ -1,37 +1,48 @@
-# debianConfig
-Set de configuraciones básicas y programas a instalar
+# debianConfig #
+Este archivo es una síntesis de algunas de las configuraciones y comandos para instalar programas en debian. El documento nace a partir del código de [Miguel Sevilla Canejo] (https://gitlab.com/msevilla00/linux_scripts/-/blob/master/debian_postinstall_script.sh) (se agradece su aporte a la comunidad geoespacial) al cual le hice modificaciones de las cosas que no instalo o que instalo de otro modo
 
-Activar tapmouse en settings
+## Set de configuraciones básicas y programas a instalar ##
 
-##Atajos
-Abrir terminal con ctrl+alt+t... ir a shortcuts  y crear atajo para gnome-terminal
-
-##Activar el autocompletado de la terminal
-
-apt-get install bash-completion
-
- nano ~/.bash_profile
-##Agregar el siguiente texto y guardar los cambios
-
-if [ -f /etc/bash_completion ]; then
- . /etc/bash_completion
-fi
+* Configuración básica de GNOME
+	* Tapmouse
+	* Atajos para activar la **terminal** 
+	* Autocompletado en la terminal
+	* Apariencia
 
 
-##Configuracion de apariencia en gnome
+### Tapmouse
+
+### Atajo para abrir la terminal
+Para activar el shortcut ctrl+alt+t. Ir a shortcuts + crear atajo para gnome-terminal
+
+### Activar el autocompletado de la terminal
+
+<code> apt-get install bash-completion </code>
+<code> nano ~/.bash_profile </code> # para abrir el archivo en nano o similar....
+ 
+#Agregar el siguiente texto y guardar los cambios
+
+<code> if [ -f /etc/bash_completion ]; then  
+ . /etc/bash_completion  
+fi </code>
+
+
+## Configuracion de apariencia en gnome
 
 sudo apt install gnome-shell-extensions #sirve para configuraciones en general, activar boton derecho del touchpad
 
 sudo apt install gnome-shell-extension-autohidetopbar # autoesconder la barra superior}
 #Instalar just perfection https://extensions.gnome.org/extension/3843/just-perfection/
 
-
+## Docker
+<code>sudo apt install -y docker.io / </code>
+<code>	docker-compose podman </code>
 
 sudo apt install -y software-properties-common wget curl
 sudo apt-get install wget
 sudo apt-get install gdebi-core 
 
-#QGIS
+## QGIS
 sudo apt install gnupg software-properties-common
 
 wget https://download.qgis.org/downloads/qgis-archive-keyring.gpg
@@ -120,6 +131,8 @@ sudo dpkg -i /tmp/rstudio.deb
 	# Python
 sudo apt install -y python3-pip		# Gestor de paquetes de Python3
 
+sudo apt install -y docker.io \
+	docker-compose podman 	
 
 okular
 
