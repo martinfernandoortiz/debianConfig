@@ -59,29 +59,42 @@ Architectures: amd64
 Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 
+## Latex
 sudo apt install -y pandoc				# transformar archivos
 sudo apt install -y texlive-latex-recommended   # LaTeX
 sudo apt install -y texlive-lang-spanish # paquete español
-sudo apt install -y evince				# visor de PDF de gnome
+
+## visor de PDF de gnome
+
+sudo apt install -y evince		
+
+## Calibre
 sudo apt install -y calibre calibre-bin	# ebooks 
 sudo apt install -y meld              	# comparar archivos
 
+## Github
 sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
 sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb
 
+## Blender
 sudo apt-get install snapd
 sudo snap install blender --classic
 sudo snap remove blender
 
-
+## Chromium
 sudo apt install -y chromium
+
+## Remina (VPN)
 sudo apt install -y remmina \
 	remmina-plugin*  
 
-
+## Inkscape
 sudo apt install -y inkscape          	# editor vectorial
+
+## gimp
 sudo apt install -y gimp	
 
+## pdf y varios
 sudo apt install -y scribus             # maquetación de docs y edición de PDFs 
 sudo apt install -y pdfarranger			# modificar PDFs (mover, quitar o unir páginas)
 sudo apt install -y krop              	# cortar PDFs
@@ -97,7 +110,7 @@ sudo apt install -y qgis qgis-plugin-grass		# QGIS [1]
 sudo apt install -y grass grass-gui grass-doc	# GRASS GIS
 sudo apt install -y saga						# SAGA GIS
 
-	# R [2]
+## R 
 sudo apt install -y r-base-core r-base-dev
 sudo apt install -y r-base-html build-essential
 sudo apt install -y r-recommended # revisar si corrigen eso de abajo
