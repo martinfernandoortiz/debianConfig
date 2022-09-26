@@ -29,48 +29,50 @@ fi </code>
 
 ## Configuracion de apariencia en gnome
 
-sudo apt install gnome-shell-extensions #sirve para configuraciones en general, activar boton derecho del touchpad
+<code> sudo apt install gnome-shell-extensions </code> #sirve para configuraciones en general, activar boton derecho del touchpad
 
-sudo apt install gnome-shell-extension-autohidetopbar # autoesconder la barra superior}
+<code> sudo apt install gnome-shell-extension-autohidetopbar </code> # autoesconder la barra superior}
+
+
 #Instalar just perfection https://extensions.gnome.org/extension/3843/just-perfection/
 
 ## Docker
 <code>sudo apt install -y docker.io / </code>
 <code>	docker-compose podman </code>
 
-sudo apt install -y software-properties-common wget curl
-sudo apt-get install wget
-sudo apt-get install gdebi-core 
+<code>sudo apt install -y software-properties-common wget curl  
+sudo apt-get install wget  
+sudo apt-get install gdebi-core </code>
 
 ## QGIS
-sudo apt install gnupg software-properties-common
+<code> sudo apt install gnupg software-properties-common  
 
-wget https://download.qgis.org/downloads/qgis-archive-keyring.gpg
-gpg --no-default-keyring --keyring ./qgis-archive-keyring.gpg --list-keys
-sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer
-sudo cp qgis-archive-keyring.gpg /etc/apt/keyrings/qgis-archive-keyring.gpg
+wget https://download.qgis.org/downloads/qgis-archive-keyring.gpg  
+gpg --no-default-keyring --keyring ./qgis-archive-keyring.gpg --list-keys  
+sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer  
+sudo cp qgis-archive-keyring.gpg /etc/apt/keyrings/qgis-archive-keyring.gpg</code>  
 
-sudo nano /etc/apt/sources.list.d/qgis.sources
-agregar esto
+<code>sudo nano /etc/apt/sources.list.d/qgis.sources </code>  
+#agregar esto  
 Types: deb deb-src
 URIs: *https://qgis.org/debian*
 Suites: bullseye 
 Architectures: amd64
 Components: main
-Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
+Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg  
 
 ## Latex
-sudo apt install -y pandoc				# transformar archivos
+<code> sudo apt install -y pandoc				# transformar archivos  
 sudo apt install -y texlive-latex-recommended   # LaTeX
-sudo apt install -y texlive-lang-spanish # paquete español
+sudo apt install -y texlive-lang-spanish # paquete español </code>
 
 ## visor de PDF de gnome
 
-sudo apt install -y evince		
+<code>sudo apt install -y evince	</code>  	
 
 ## Calibre
-sudo apt install -y calibre calibre-bin	# ebooks 
-sudo apt install -y meld              	# comparar archivos
+<code>sudo apt install -y calibre calibre-bin </code>	# ebooks 
+<code>sudo apt install -y meld     </code>         	# comparar archivos
 
 ## Github
 sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
