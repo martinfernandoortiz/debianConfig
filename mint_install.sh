@@ -53,6 +53,8 @@ Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg'
 
 sudo apt update
 sudo apt install qgis qgis-plugin-grass
+#saga gis
+sudo apt-get install saga
 
 
 
