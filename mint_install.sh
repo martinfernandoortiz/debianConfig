@@ -36,6 +36,16 @@ sudo sh -c 'echo "# QGIS Latest Release
 deb [arch=amd64] http://qgis.org/ubuntu-ltr $(lsb_release -sc) main
 deb-src http://qgis.org/ubuntu-ltr $(lsb_release -sc) main" > /etc/apt/sources.list.d/qgis-ltr.list'
 
+
+#o si no
+
+sudo sh -c 'echo "Types: deb deb-src
+URIs: https://qgis.org/ubuntu-ltr
+Suites: jammy
+Architectures: amd64
+Components: main
+Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg'
+
 # En el caso de querer la ultima
 #sudo sh -c 'echo "# QGIS Latest Release
 #deb [arch=amd64] http://qgis.org/ubuntu $(lsb_release -sc) main
