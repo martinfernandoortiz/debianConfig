@@ -59,12 +59,12 @@ sudo cp qgis-archive-keyring.gpg /etc/apt/keyrings/qgis-archive-keyring.gpg</cod
 
 <code>sudo nano /etc/apt/sources.list.d/qgis.sources </code>  
 #agregar esto  
-Types: deb deb-src
-URIs: *https://qgis.org/debian*
-Suites: bullseye 
-Architectures: amd64
-Components: main
-Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg  
+<code>Types: deb deb-src<code>
+<code>URIs: *https://qgis.org/debian-ltr*<code>
+<code>Suites: bullseye <code>
+<code>Architectures: amd64<code>
+<code>Components: main<code>
+<code>Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg  <code>
 
 ## Latex
 <code> sudo apt install -y pandoc				# transformar archivos  
