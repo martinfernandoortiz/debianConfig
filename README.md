@@ -59,12 +59,12 @@ sudo cp qgis-archive-keyring.gpg /etc/apt/keyrings/qgis-archive-keyring.gpg</cod
 
 <code>sudo nano /etc/apt/sources.list.d/qgis.sources </code>  
 #agregar esto  
-<code>Types: deb deb-src<code>
-<code>URIs: *https://qgis.org/debian-ltr*<code>
-<code>Suites: bullseye <code>
-<code>Architectures: amd64<code>
-<code>Components: main<code>
-<code>Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg  <code>
+Types: deb deb-src<code>
+URIs: *https://qgis.org/debian-ltr*
+Suites: bullseye <code>
+Architectures: amd64
+Components: main
+Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg  
 
 ## Latex
 <code> sudo apt install -y pandoc				# transformar archivos  
@@ -118,20 +118,20 @@ sudo apt install -y grass grass-gui grass-doc	# GRASS GIS
 sudo apt install -y saga						# SAGA GIS
 
 ## R 
-sudo apt install -y r-base-core r-base-dev
-sudo apt install -y r-base-html build-essential
-sudo apt install -y r-recommended # revisar si corrigen eso de abajo
-wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.0-351-amd64.deb
-sudo apt install -f ./rstudio-2021.09.0-351-amd64.deb
+<code>sudo apt install -y r-base-core r-base-dev
+<code>sudo apt install -y r-base-html build-essential
+<code>sudo apt install -y r-recommended # revisar si corrigen eso de abajo
+<code>wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.0-351-amd64.deb
+<code>sudo apt install -f ./rstudio-2021.09.0-351-amd64.deb
 
   # dependencias necesarias para instalación de algunos paquetes:				# nombrepaquete
-sudo apt install -y make libcurl4-openssl-dev libssl-dev pandoc libxml2-dev		# tydiverse
-sudo apt install -y libmariadb-dev libssl-dev libsodium-dev 			  		# openssl / libmariadbclient-dev
-sudo apt install -y libgdal-dev libproj-dev build-essential 					# gdal
-sudo apt install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev			# sf
-sudo apt install -y protobuf-compiler libprotobuf-dev 						# tmap
-sudo apt install -y default-jdk 							  # rJava (it's needed for some packages)
-ssudo apt install -y libgmp-dev libmpfr-dev 					                # HH
+<code>sudo apt install -y make libcurl4-openssl-dev libssl-dev pandoc libxml2-dev		# tydiverse
+<code>sudo apt install -y libmariadb-dev libssl-dev libsodium-dev 			  		# openssl / libmariadbclient-dev
+<code>sudo apt install -y libgdal-dev libproj-dev build-essential 					# gdal
+<code>sudo apt install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev			# sf
+<code>sudo apt install -y protobuf-compiler libprotobuf-dev 						# tmap
+<code>sudo apt install -y default-jdk 							  # rJava (it's needed for some packages)
+<code>sudo apt install -y libgmp-dev libmpfr-dev 					                # HH
 
 	# paquetes necesarios para RStudio (y descarga, jq)
 sudo apt install -y libclang-dev jq
