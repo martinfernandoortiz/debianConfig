@@ -67,7 +67,7 @@ Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg  
 
 ## Latex
-<code> sudo apt install -y pandoc				# transformar archivos  
+<code> sudo apt install -y pandoc	</code>			# transformar archivos  
 sudo apt install -y texlive-latex-recommended   # LaTeX
 sudo apt install -y texlive-lang-spanish # paquete español </code>
 
@@ -118,23 +118,23 @@ sudo apt install -y grass grass-gui grass-doc	# GRASS GIS
 sudo apt install -y saga						# SAGA GIS
 
 ## R 
-<code>sudo apt install -y r-base-core r-base-dev
-<code>sudo apt install -y r-base-html build-essential
-<code>sudo apt install -y r-recommended # revisar si corrigen eso de abajo
-<code>wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.0-351-amd64.deb
-<code>sudo apt install -f ./rstudio-2021.09.0-351-amd64.deb
+<code>sudo apt install -y r-base-core r-base-dev</code>
+<code>sudo apt install -y r-base-html build-essential</code>
+<code>sudo apt install -y r-recommended</code> # revisar si corrigen eso de abajo
+<code>wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.0-351-amd64.deb</code>
+<code>sudo apt install -f ./rstudio-2021.09.0-351-amd64.deb</code>
 
   # dependencias necesarias para instalación de algunos paquetes:				# nombrepaquete
-<code>sudo apt install -y make libcurl4-openssl-dev libssl-dev pandoc libxml2-dev		# tydiverse
-<code>sudo apt install -y libmariadb-dev libssl-dev libsodium-dev 			  		# openssl / libmariadbclient-dev
-<code>sudo apt install -y libgdal-dev libproj-dev build-essential 					# gdal
-<code>sudo apt install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev			# sf
-<code>sudo apt install -y protobuf-compiler libprotobuf-dev 						# tmap
-<code>sudo apt install -y default-jdk 							  # rJava (it's needed for some packages)
-<code>sudo apt install -y libgmp-dev libmpfr-dev 					                # HH
+<code>sudo apt install -y make libcurl4-openssl-dev libssl-dev pandoc libxml2-dev</code>		# tydiverse
+<code>sudo apt install -y libmariadb-dev libssl-dev libsodium-dev 	</code>		  		# openssl / libmariadbclient-dev
+<code>sudo apt install -y libgdal-dev libproj-dev build-essential 	</code>				# gdal
+<code>sudo apt install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev	</code>		# sf
+<code>sudo apt install -y protobuf-compiler libprotobuf-dev 		</code>				# tmap
+<code>sudo apt install -y default-jdk 			</code>				  # rJava (it's needed for some packages)
+<code>sudo apt install -y libgmp-dev libmpfr-dev 		</code>			                # HH
 
 	# paquetes necesarios para RStudio (y descarga, jq)
-sudo apt install -y libclang-dev jq
+<code>sudo apt install -y libclang-dev jq</code>
 	# descargar e instalar última versión de RStudio
 	# Fuente: https://gitlab.com/rspatial_es/general/-/blob/master/install_rcran_ubuntu.sh
 	
