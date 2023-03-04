@@ -1,7 +1,10 @@
 # debianConfig #
 # Set de comandos para instalar programas básicos orientados a GIS y Data Analytics #
 
-Este archivo es una síntesis de algunas de las configuraciones y comandos para instalar programas en debian. El documento nace a partir del código de [Miguel Sevilla Canejo] (https://gitlab.com/msevilla00/linux_scripts/-/blob/master/debian_postinstall_script.sh) (se agradece su aporte a la comunidad geoespacial) al cual le hice modificaciones de las cosas que no instalo o que instalo de otro modo
+Este archivo es una síntesis de algunas de las configuraciones y comandos para instalar programas en debian. El documento nace a partir del código de [Miguel Sevilla Canejo] (https://gitlab.com/msevilla00/linux_scripts/-/blob/master/debian_postinstall_script.sh) (se agradece su aporte a la comunidad geoespacial) al cual le hice modificaciones de las cosas que no instalo o que instalo de otro modo.
+
+
+Antes de empezar hice algunas modificaciones en la sources list agregando contrib non-free a los repos. Se puede considerar tambien agregar los backports pero no lo hice
 
 ## Set de configuraciones básicas y programas a instalar ##
 
