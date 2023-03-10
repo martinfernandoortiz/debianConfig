@@ -1,4 +1,5 @@
 #!/bin/bash
+ sudo apt install atom4
 
 
 sudo apt install -y docker.io / docker-compose podman 
