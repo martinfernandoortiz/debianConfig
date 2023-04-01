@@ -1,5 +1,21 @@
 #!/bin/bash
-#falta agregar el repositorio para tener version mas nueva
+
+#Fuente https://cran.r-project.org/bin/linux/ubuntu/
+
+# update indices
+sudo apt update -qq
+
+# install two helper packages we need
+sudo apt install --no-install-recommends software-properties-common dirmngr
+
+# add the signing key (by Michael Rutter) for these repos
+# To verify key, run gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc 
+# Fingerprint: E298A3A825C0D65DFD57CBB651716619E084DAB9
+
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+# add the R 4.0 repo from CRAN -- adjust 'focal' to 'groovy' or 'bionic' as needed
+
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 sudo nano /etc/apt/sources.list
 
 
@@ -21,12 +37,12 @@ sudo apt install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev	# sf
 sudo apt install -y protobuf-compiler libprotobuf-dev 			# tmap
 sudo apt install -y default-jdk 					# rJava (it's needed for some packages)
 sudo apt install -y libgmp-dev libmpfr-dev 				# HH
-sudo apt install libfontconfig1-dev
-sudo apt install libfribidi-dev 
-sudo apt install r-base-dev r-cran-sf r-cran-raster r-cran-rjava
-sudo apt install libharfbuzz-dev 
-sudo apt install libfontconfig1-dev
+sudo apt install -y libfontconfig1-dev
+sudo apt install -y libfribidi-dev 
+sudo apt install -y r-base-dev r-cran-sf r-cran-raster r-cran-rjava
+sudo apt install -y libharfbuzz-dev 
+sudo apt install -ylibfontconfig1-dev
 
-sudo apt-get install libbz2-dev liblzma-dev
+sudo apt-get -y install libbz2-dev liblzma-dev
 
 
