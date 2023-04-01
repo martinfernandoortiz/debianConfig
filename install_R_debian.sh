@@ -45,4 +45,8 @@ sudo apt install -ylibfontconfig1-dev
 
 sudo apt-get -y install libbz2-dev liblzma-dev
 
+#wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.03.0-386-amd64.deb
+sudo gdebi  ~/Downloads/rstudio-2023.03.0-386-amd64.deb 
+
+
 
