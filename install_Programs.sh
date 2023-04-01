@@ -29,3 +29,14 @@ sudo apt update && sudo apt install -y github-desktop
 #Anaconda
 wget https://repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh
 
+#Dependencias
+sudo apt-get install -y libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+
+shasum -a 256 /Downloads/FILENAME
+# Replace /PATH/FILENAME with your installation's path and filename.
+# shasum  -a 256 /home/martin/Downloads/Anaconda3-2023.03-Linux-x86_64.sh 
+
+bash ~/Downloads/Anaconda3-2023.03-Linux-x86_64.sh 
+source ~/anaconda3/bin/activate
+conda init
+
