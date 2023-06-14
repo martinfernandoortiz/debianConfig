@@ -42,7 +42,7 @@ fi </code>
 #Instalar just perfection https://extensions.gnome.org/extension/3843/just-perfection/
 
 ## Docker
-<code>sudo apt install -y docker.io / </code>
+<code>sudo apt install -y docker.io  </code>
 <code>	docker-compose podman </code>
 
 <code>sudo apt install -y software-properties-common wget curl  
