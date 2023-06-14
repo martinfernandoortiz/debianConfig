@@ -50,18 +50,17 @@ sudo apt-get install wget
 sudo apt-get install gdebi-core </code>
 
 ## QGIS
-<code> sudo apt install gnupg software-properties-common  
-
-wget https://download.qgis.org/downloads/qgis-archive-keyring.gpg  
-gpg --no-default-keyring --keyring ./qgis-archive-keyring.gpg --list-keys  
+<code> sudo apt install gnupg software-properties-common  #dependencias necesarias
+ 
 sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer  
-sudo cp qgis-archive-keyring.gpg /etc/apt/keyrings/qgis-archive-keyring.gpg</code>  
+sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
+</code>  
 
 <code>sudo nano /etc/apt/sources.list.d/qgis.sources </code>  
 #agregar esto  
 Types: deb deb-src<code>
 URIs: *https://qgis.org/debian-ltr*
-Suites: bullseye <code>
+Suites: Bookworm <code>
 Architectures: amd64
 Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg  
