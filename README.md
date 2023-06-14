@@ -83,8 +83,7 @@ sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-li
 sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb
 
 ## Blender
-sudo apt-get install snapd
-sudo snap install blender --classic
+sudo apt install blender --classic
 sudo snap remove blender
 
 ## Chromium
